@@ -1,42 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14815" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NBu-mt-KyX">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15400" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NBu-mt-KyX">
     <device id="watch38"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14770"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14621"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15400"/>
     </dependencies>
     <scenes>
         <!--Hosting Controller-->
         <scene sceneID="RUd-og-cv4">
             <objects>
-                <hostingController id="NBu-mt-KyX" customClass="HostingController" 
-                customModuleProvider="target"/>                
+                <hostingController id="NBu-mt-KyX" customClass="HostingController" customModule="MyWatchTimerWatch" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="187" y="141"/>
         </scene>
-        <!--Static Notification Interface Controller-->
-        <scene sceneID="AEw-b0-oYE">
+        <!--Interface Controller-->
+        <scene sceneID="n2Y-cq-WFb">
             <objects>
-                <notificationController id="YCC-NB-fut">
+                <controller id="Af6-j8-PIA">
                     <items>
-                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                        <label alignment="left" text="⏰ Simple Timer" id="nkG-HX-qxv"/>
+                        <group width="1" height="40" alignment="center" id="sr9-XG-iOj">
+                            <items>
+                                <timer alignment="center" verticalAlignment="center" id="yI0-Dd-z6w">
+                                    <fontDescription key="font" type="boldSystem" pointSize="24"/>
+                                    <calendarUnit key="units" minute="YES" second="YES"/>
+                                </timer>
+                            </items>
+                            <color key="backgroundColor" red="0.0" green="0.47214749964178004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </group>
+                        <button width="1" alignment="left" title="START" id="Rka-iY-Sh2"/>
+                        <button width="1" alignment="left" title="STOP" id="Kjp-0r-aVQ"/>
+                        <table alignment="left" id="0TM-3C-wXV"/>
+                        <button width="1" alignment="left" title="RESET" id="q0g-1F-sU7"/>
                     </items>
-                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
-                    <connections>
-                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
-                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
-                    </connections>
-                </notificationController>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="187" y="462"/>
-        </scene>
-        <!--Notification Hosting Controller-->
-        <scene sceneID="Niz-AI-uX2">
-            <objects>
-                <controller id="eXb-UN-Cd0" customClass="NotificationController"
-                customModuleProvider="target"/>
-            </objects>
-            <point key="canvasLocation" x="488" y="462"/>
+            <point key="canvasLocation" x="180" y="431"/>
         </scene>
     </scenes>
 </document>

@@ -12,6 +12,15 @@ import SwiftUI
 
 class HostingController: WKHostingController<ContentView> {
     override var body: ContentView {
-        return ContentView()
+        var view = ContentView()
+        view.contentViewDelegate = self
+        
+        return view
+    }
+}
+
+extension HostingController: ContentViewDelegate {
+    func onTapButton() {
+        print("onTapButton")
     }
 }

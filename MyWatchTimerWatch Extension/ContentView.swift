@@ -8,9 +8,16 @@
 
 import SwiftUI
 
+public protocol ContentViewDelegate {
+    func onTapButton()
+}
+
 struct ContentView: View {
+    var contentViewDelegate: ContentViewDelegate?
     var body: some View {
-        Text("Hello World")
+        Button(action: {self.contentViewDelegate?.onTapButton()}) {
+            Text("Increment Total")
+        }
     }
 }
 
