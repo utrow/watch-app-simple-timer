@@ -24,6 +24,7 @@
 		D9CE83C92363DBAE00D9F99E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9CE83C82363DBAE00D9F99E /* Assets.xcassets */; };
 		D9CE83CC2363DBAE00D9F99E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9CE83CB2363DBAE00D9F99E /* Preview Assets.xcassets */; };
 		D9CE83D12363DBAE00D9F99E /* MyWatchTimerWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D9CE83AD2363DBAC00D9F99E /* MyWatchTimerWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D9CE83E123642E3A00D9F99E /* TimerDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CE83E023642E3A00D9F99E /* TimerDetailController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		D9CE83CB2363DBAE00D9F99E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D9CE83CD2363DBAE00D9F99E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9CE83CE2363DBAE00D9F99E /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		D9CE83E023642E3A00D9F99E /* TimerDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerDetailController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,8 +160,7 @@
 		D9CE83BD2363DBAD00D9F99E /* MyWatchTimerWatch Extension */ = {
 			isa = PBXGroup;
 			children = (
-				D9CE83BE2363DBAD00D9F99E /* ContentView.swift */,
-				D9CE83C02363DBAD00D9F99E /* HostingController.swift */,
+				D9CE83DD23642DF000D9F99E /* Screen */,
 				D9CE83C22363DBAD00D9F99E /* ExtensionDelegate.swift */,
 				D9CE83C42363DBAD00D9F99E /* NotificationController.swift */,
 				D9CE83C62363DBAD00D9F99E /* NotificationView.swift */,
@@ -177,6 +178,32 @@
 				D9CE83CB2363DBAE00D9F99E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D9CE83DD23642DF000D9F99E /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				D9CE83DF23642E1B00D9F99E /* TimerDetail */,
+				D9CE83DE23642E0B00D9F99E /* Home */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		D9CE83DE23642E0B00D9F99E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D9CE83BE2363DBAD00D9F99E /* ContentView.swift */,
+				D9CE83C02363DBAD00D9F99E /* HostingController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D9CE83DF23642E1B00D9F99E /* TimerDetail */ = {
+			isa = PBXGroup;
+			children = (
+				D9CE83E023642E3A00D9F99E /* TimerDetailController.swift */,
+			);
+			path = TimerDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,6 +353,7 @@
 				D9CE83BF2363DBAD00D9F99E /* ContentView.swift in Sources */,
 				D9CE83C52363DBAD00D9F99E /* NotificationController.swift in Sources */,
 				D9CE83C32363DBAD00D9F99E /* ExtensionDelegate.swift in Sources */,
+				D9CE83E123642E3A00D9F99E /* TimerDetailController.swift in Sources */,
 				D9CE83C72363DBAD00D9F99E /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

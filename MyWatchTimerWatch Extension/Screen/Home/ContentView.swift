@@ -16,7 +16,7 @@ struct ContentView: View {
     var contentViewDelegate: ContentViewDelegate?
     var body: some View {
         Button(action: {self.contentViewDelegate?.onTapButton()}) {
-            Text("Increment Total")
+            Text("Select timer")
         }
     }
 }
