@@ -13,7 +13,61 @@
 		D9CE839F2363D7AA00D9F99E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9CE839D2363D7AA00D9F99E /* Main.storyboard */; };
 		D9CE83A12363D7AC00D9F99E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9CE83A02363D7AC00D9F99E /* Assets.xcassets */; };
 		D9CE83A42363D7AC00D9F99E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9CE83A22363D7AC00D9F99E /* LaunchScreen.storyboard */; };
+		D9CE83B12363DBAC00D9F99E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9CE83AF2363DBAC00D9F99E /* Interface.storyboard */; };
+		D9CE83B32363DBAD00D9F99E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9CE83B22363DBAD00D9F99E /* Assets.xcassets */; };
+		D9CE83BA2363DBAD00D9F99E /* MyWatchTimerWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D9CE83B92363DBAD00D9F99E /* MyWatchTimerWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D9CE83BF2363DBAD00D9F99E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CE83BE2363DBAD00D9F99E /* ContentView.swift */; };
+		D9CE83C12363DBAD00D9F99E /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CE83C02363DBAD00D9F99E /* HostingController.swift */; };
+		D9CE83C32363DBAD00D9F99E /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CE83C22363DBAD00D9F99E /* ExtensionDelegate.swift */; };
+		D9CE83C52363DBAD00D9F99E /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CE83C42363DBAD00D9F99E /* NotificationController.swift */; };
+		D9CE83C72363DBAD00D9F99E /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CE83C62363DBAD00D9F99E /* NotificationView.swift */; };
+		D9CE83C92363DBAE00D9F99E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9CE83C82363DBAE00D9F99E /* Assets.xcassets */; };
+		D9CE83CC2363DBAE00D9F99E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9CE83CB2363DBAE00D9F99E /* Preview Assets.xcassets */; };
+		D9CE83D12363DBAE00D9F99E /* MyWatchTimerWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D9CE83AD2363DBAC00D9F99E /* MyWatchTimerWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D9CE83E123642E3A00D9F99E /* TimerDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CE83E023642E3A00D9F99E /* TimerDetailController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D9CE83BB2363DBAD00D9F99E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9CE838C2363D7AA00D9F99E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9CE83B82363DBAD00D9F99E;
+			remoteInfo = "MyWatchTimerWatch Extension";
+		};
+		D9CE83CF2363DBAE00D9F99E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9CE838C2363D7AA00D9F99E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9CE83AC2363DBAC00D9F99E;
+			remoteInfo = MyWatchTimerWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D9CE83D52363DBAE00D9F99E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D9CE83BA2363DBAD00D9F99E /* MyWatchTimerWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9CE83D92363DBAE00D9F99E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D9CE83D12363DBAE00D9F99E /* MyWatchTimerWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D9CE83942363D7AA00D9F99E /* MyWatchTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWatchTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +78,32 @@
 		D9CE83A02363D7AC00D9F99E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9CE83A32363D7AC00D9F99E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9CE83A52363D7AC00D9F99E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9CE83AD2363DBAC00D9F99E /* MyWatchTimerWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWatchTimerWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9CE83B02363DBAC00D9F99E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		D9CE83B22363DBAD00D9F99E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D9CE83B42363DBAD00D9F99E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9CE83B92363DBAD00D9F99E /* MyWatchTimerWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MyWatchTimerWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9CE83BE2363DBAD00D9F99E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D9CE83C02363DBAD00D9F99E /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		D9CE83C22363DBAD00D9F99E /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		D9CE83C42363DBAD00D9F99E /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		D9CE83C62363DBAD00D9F99E /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		D9CE83C82363DBAE00D9F99E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D9CE83CB2363DBAE00D9F99E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D9CE83CD2363DBAE00D9F99E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9CE83CE2363DBAE00D9F99E /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		D9CE83E023642E3A00D9F99E /* TimerDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerDetailController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D9CE83912363D7AA00D9F99E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9CE83B62363DBAD00D9F99E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				D9CE83962363D7AA00D9F99E /* MyWatchTimer */,
+				D9CE83AE2363DBAC00D9F99E /* MyWatchTimerWatch */,
+				D9CE83BD2363DBAD00D9F99E /* MyWatchTimerWatch Extension */,
 				D9CE83952363D7AA00D9F99E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +127,8 @@
 			isa = PBXGroup;
 			children = (
 				D9CE83942363D7AA00D9F99E /* MyWatchTimer.app */,
+				D9CE83AD2363DBAC00D9F99E /* MyWatchTimerWatch.app */,
+				D9CE83B92363DBAD00D9F99E /* MyWatchTimerWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +147,65 @@
 			path = MyWatchTimer;
 			sourceTree = "<group>";
 		};
+		D9CE83AE2363DBAC00D9F99E /* MyWatchTimerWatch */ = {
+			isa = PBXGroup;
+			children = (
+				D9CE83AF2363DBAC00D9F99E /* Interface.storyboard */,
+				D9CE83B22363DBAD00D9F99E /* Assets.xcassets */,
+				D9CE83B42363DBAD00D9F99E /* Info.plist */,
+			);
+			path = MyWatchTimerWatch;
+			sourceTree = "<group>";
+		};
+		D9CE83BD2363DBAD00D9F99E /* MyWatchTimerWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D9CE83DD23642DF000D9F99E /* Screen */,
+				D9CE83C22363DBAD00D9F99E /* ExtensionDelegate.swift */,
+				D9CE83C42363DBAD00D9F99E /* NotificationController.swift */,
+				D9CE83C62363DBAD00D9F99E /* NotificationView.swift */,
+				D9CE83C82363DBAE00D9F99E /* Assets.xcassets */,
+				D9CE83CD2363DBAE00D9F99E /* Info.plist */,
+				D9CE83CE2363DBAE00D9F99E /* PushNotificationPayload.apns */,
+				D9CE83CA2363DBAE00D9F99E /* Preview Content */,
+			);
+			path = "MyWatchTimerWatch Extension";
+			sourceTree = "<group>";
+		};
+		D9CE83CA2363DBAE00D9F99E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D9CE83CB2363DBAE00D9F99E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D9CE83DD23642DF000D9F99E /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				D9CE83DF23642E1B00D9F99E /* TimerDetail */,
+				D9CE83DE23642E0B00D9F99E /* Home */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		D9CE83DE23642E0B00D9F99E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D9CE83BE2363DBAD00D9F99E /* ContentView.swift */,
+				D9CE83C02363DBAD00D9F99E /* HostingController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D9CE83DF23642E1B00D9F99E /* TimerDetail */ = {
+			isa = PBXGroup;
+			children = (
+				D9CE83E023642E3A00D9F99E /* TimerDetailController.swift */,
+			);
+			path = TimerDetail;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +216,51 @@
 				D9CE83902363D7AA00D9F99E /* Sources */,
 				D9CE83912363D7AA00D9F99E /* Frameworks */,
 				D9CE83922363D7AA00D9F99E /* Resources */,
+				D9CE83D92363DBAE00D9F99E /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D9CE83D02363DBAE00D9F99E /* PBXTargetDependency */,
 			);
 			name = MyWatchTimer;
 			productName = MyWatchTimer;
 			productReference = D9CE83942363D7AA00D9F99E /* MyWatchTimer.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D9CE83AC2363DBAC00D9F99E /* MyWatchTimerWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9CE83D62363DBAE00D9F99E /* Build configuration list for PBXNativeTarget "MyWatchTimerWatch" */;
+			buildPhases = (
+				D9CE83AB2363DBAC00D9F99E /* Resources */,
+				D9CE83D52363DBAE00D9F99E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9CE83BC2363DBAD00D9F99E /* PBXTargetDependency */,
+			);
+			name = MyWatchTimerWatch;
+			productName = MyWatchTimerWatch;
+			productReference = D9CE83AD2363DBAC00D9F99E /* MyWatchTimerWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		D9CE83B82363DBAD00D9F99E /* MyWatchTimerWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9CE83D22363DBAE00D9F99E /* Build configuration list for PBXNativeTarget "MyWatchTimerWatch Extension" */;
+			buildPhases = (
+				D9CE83B52363DBAD00D9F99E /* Sources */,
+				D9CE83B62363DBAD00D9F99E /* Frameworks */,
+				D9CE83B72363DBAD00D9F99E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MyWatchTimerWatch Extension";
+			productName = "MyWatchTimerWatch Extension";
+			productReference = D9CE83B92363DBAD00D9F99E /* MyWatchTimerWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +273,12 @@
 				ORGANIZATIONNAME = buch;
 				TargetAttributes = {
 					D9CE83932363D7AA00D9F99E = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					D9CE83AC2363DBAC00D9F99E = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					D9CE83B82363DBAD00D9F99E = {
 						CreatedOnToolsVersion = 11.1;
 					};
 				};
@@ -116,6 +297,8 @@
 			projectRoot = "";
 			targets = (
 				D9CE83932363D7AA00D9F99E /* MyWatchTimer */,
+				D9CE83AC2363DBAC00D9F99E /* MyWatchTimerWatch */,
+				D9CE83B82363DBAD00D9F99E /* MyWatchTimerWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +311,24 @@
 				D9CE83A42363D7AC00D9F99E /* LaunchScreen.storyboard in Resources */,
 				D9CE83A12363D7AC00D9F99E /* Assets.xcassets in Resources */,
 				D9CE839F2363D7AA00D9F99E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9CE83AB2363DBAC00D9F99E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9CE83B32363DBAD00D9F99E /* Assets.xcassets in Resources */,
+				D9CE83B12363DBAC00D9F99E /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9CE83B72363DBAD00D9F99E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9CE83CC2363DBAE00D9F99E /* Preview Assets.xcassets in Resources */,
+				D9CE83C92363DBAE00D9F99E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +345,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D9CE83B52363DBAD00D9F99E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9CE83C12363DBAD00D9F99E /* HostingController.swift in Sources */,
+				D9CE83BF2363DBAD00D9F99E /* ContentView.swift in Sources */,
+				D9CE83C52363DBAD00D9F99E /* NotificationController.swift in Sources */,
+				D9CE83C32363DBAD00D9F99E /* ExtensionDelegate.swift in Sources */,
+				D9CE83E123642E3A00D9F99E /* TimerDetailController.swift in Sources */,
+				D9CE83C72363DBAD00D9F99E /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D9CE83BC2363DBAD00D9F99E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9CE83B82363DBAD00D9F99E /* MyWatchTimerWatch Extension */;
+			targetProxy = D9CE83BB2363DBAD00D9F99E /* PBXContainerItemProxy */;
+		};
+		D9CE83D02363DBAE00D9F99E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9CE83AC2363DBAC00D9F99E /* MyWatchTimerWatch */;
+			targetProxy = D9CE83CF2363DBAE00D9F99E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D9CE839D2363D7AA00D9F99E /* Main.storyboard */ = {
@@ -161,6 +388,14 @@
 				D9CE83A32363D7AC00D9F99E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D9CE83AF2363DBAC00D9F99E /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9CE83B02363DBAC00D9F99E /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -314,6 +549,88 @@
 			};
 			name = Release;
 		};
+		D9CE83D32363DBAE00D9F99E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MyWatchTimerWatch Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "MyWatchTimerWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = buch.MyWatchTimer.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		D9CE83D42363DBAE00D9F99E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MyWatchTimerWatch Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "MyWatchTimerWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = buch.MyWatchTimer.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		D9CE83D72363DBAE00D9F99E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = MyWatchTimerWatch_Extension;
+				INFOPLIST_FILE = MyWatchTimerWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = buch.MyWatchTimer.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		D9CE83D82363DBAE00D9F99E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = MyWatchTimerWatch_Extension;
+				INFOPLIST_FILE = MyWatchTimerWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = buch.MyWatchTimer.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -331,6 +648,24 @@
 			buildConfigurations = (
 				D9CE83A92363D7AC00D9F99E /* Debug */,
 				D9CE83AA2363D7AC00D9F99E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9CE83D22363DBAE00D9F99E /* Build configuration list for PBXNativeTarget "MyWatchTimerWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9CE83D32363DBAE00D9F99E /* Debug */,
+				D9CE83D42363DBAE00D9F99E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9CE83D62363DBAE00D9F99E /* Build configuration list for PBXNativeTarget "MyWatchTimerWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9CE83D72363DBAE00D9F99E /* Debug */,
+				D9CE83D82363DBAE00D9F99E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
