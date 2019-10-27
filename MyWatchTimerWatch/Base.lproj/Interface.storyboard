@@ -48,7 +48,7 @@
                         <outlet property="ResetButton" destination="q0g-1F-sU7" id="fpS-ji-YL5"/>
                         <outlet property="StartButton" destination="Rka-iY-Sh2" id="qD6-9R-pWc"/>
                         <outlet property="StopButton" destination="Kjp-0r-aVQ" id="fId-vB-lIV"/>
-                        <outlet property="Timer" destination="yI0-Dd-z6w" id="MT8-XH-AGF"/>
+                        <outlet property="UITimer" destination="yI0-Dd-z6w" id="L90-cq-u7h"/>
                     </connections>
                 </controller>
             </objects>
